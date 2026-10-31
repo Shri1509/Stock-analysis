@@ -1,0 +1,80 @@
+{
+  "capturedAt": "2026-10-30",
+  "request": {
+    "method": "GET",
+    "path": "/api/zones/detect",
+    "query": {
+      "symbol": "COCHINSHIP",
+      "timeframe": "1d",
+      "version": "v3"
+    }
+  },
+  "responseSummary": {
+    "httpStatus": 200,
+    "version": "v3",
+    "algorithmVersion": "dz-v3-canonical-6",
+    "zoneCount": 491,
+    "types": { "supply": 295, "demand": 196 },
+    "patterns": {
+      "DBD": 129,
+      "RBR": 40,
+      "BD": 44,
+      "DBR": 70,
+      "DR": 66,
+      "RD": 61,
+      "RBD": 61,
+      "BR": 20
+    },
+    "qualities": { "average": 161, "good": 268, "perfect": 62 },
+    "freshness": {
+      "broken_by_close": 428,
+      "fresh": 38,
+      "tested_by_wick": 25
+    },
+    "tradeableCount": 63,
+    "scoreMin": 36.31,
+    "scoreMax": 92.28
+  },
+  "tradeableSample": {
+    "id": "v3-canonical-1d-demand-base-1591554600-122-118.1",
+    "type": "demand",
+    "pattern": "RBR",
+    "quality": "perfect",
+    "score": 79.41,
+    "top": 122,
+    "bottom": 118.1,
+    "proximal": 122,
+    "distal": 118.1,
+    "freshnessState": "fresh",
+    "touchCount": 0,
+    "isTradeable": true,
+    "markingBasis": "normal-base",
+    "v3FormationMode": "v3_structural_arrival",
+    "markingExplanation": "Complete local Base bodies and wicks; reversal Leg-In and confirming departure extremes only.",
+    "scoreComponents": {
+      "compactness": 9.414381022979967,
+      "roleClarity": 15,
+      "departureStrength": 25,
+      "closeBreakDistance": 15,
+      "priorStructure": 15,
+      "gap": 0,
+      "origin": 0
+    },
+    "measuredEvidence": {
+      "arrivalNet": 2.8999999999999915,
+      "arrivalEfficiency": 0.3515151515151505,
+      "departureNet": 9.700000000000003,
+      "departureEfficiency": 0.8255319148936182,
+      "requiredDepartureNet": 4.150000000000006,
+      "requiredDepartureEfficiency": 0.5,
+      "requiredArrivalNet": 2.5500000000000043,
+      "requiredArrivalEfficiency": 0.35,
+      "closeBreakDistance": 9.700000000000003
+    }
+  },
+  "notes": [
+    "Candle arrays and alternative formations were omitted from this sample.",
+    "asOf was a client timestamp and is not an algorithm parameter to reconstruct.",
+    "No credentials, cookies, or CSRF tokens are stored in this file."
+  ]
+}

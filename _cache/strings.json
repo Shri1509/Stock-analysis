@@ -1,0 +1,59 @@
+{
+  "apis": [
+    "/api/activity/",
+    "/api/activity/events",
+    "/api/admin/activity/",
+    "/api/admin/users",
+    "/api/admin/users/${s}",
+    "/api/admin/users/${s}/reset-password",
+    "/api/auth/bootstrap-status",
+    "/api/auth/change-password",
+    "/api/auth/login",
+    "/api/auth/logout",
+    "/api/auth/me",
+    "/api/dashboard/items${s}",
+    "/api/user/tool-state",
+    "/api/user/tool-state/${s}",
+    "/api/zone-watch${s}",
+    "/api/zone-watch/${s}/trade-plan/attachments"
+  ],
+  "urls": [
+    "http://www.w3.org/1998/Math/MathML",
+    "http://www.w3.org/1999/xlink",
+    "http://www.w3.org/2000/svg",
+    "http://www.w3.org/XML/1998/namespace",
+    "https://logo.dev",
+    "https://react.dev/errors/",
+    "https://www.apache.org/licenses/LICENSE-2.0",
+    "https://www.tradingview.com/?utm_medium=lwc-link&utm_campaign=lwc-chart${this.Jv()}"
+  ],
+  "timeframes": [
+    "15m",
+    "1M",
+    "1d",
+    "1w",
+    "5m",
+    "day",
+    "month"
+  ],
+  "keywordCounts": {
+    "demand": 80,
+    "supply": 31,
+    "confluence": 38,
+    "bos": 0,
+    "choch": 0,
+    "rsi": 88,
+    "macd": 0,
+    "vwap": 0,
+    "atr": 68,
+    "fibonacci": 0,
+    "supertrend": 0,
+    "bollinger": 0,
+    "engulf": 0,
+    "websocket": 3,
+    "socket": 3
+  },
+  "routeLike": [
+    "/notifications"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "views": [
+    "0",
+    "a",
+    "backtesting",
+    "chart",
+    "ee",
+    "operations",
+    "s"
+  ],
+  "ltAt": 396305,
+  "ltText": "Lt=new Set([\"1w\",\"1M\",\"3M\",\"6M\",\"1Y\"]);function Gw(s,e,n=bb.htfImpulseBodyRatioMin){const a=Math.max(s.high-s.low,0),o=Math.abs(s.close-s.open)/Math.max(a,.01);return Lt.has(e)&&s.close!==s.open&&o>=n&&a/Math.max(s.low,.01)>=.45}function Yw(s,e,n={},a={}){const o={...bb,...n},u=Kw(s,o,e),h=[],p=Ja(o,e);let d=1;for(let y=1;y<u.length-1;y+=1)if(!(jb(u,y,o,e)&&!nM(u,y,o,e)))for(let v=y;v<Math.min(u.l",
+  "decision": [
+    "Ye(s.high)}${b?` | Score ${b.score}`:\"\"}${(R==null?void 0:R.decisionScore)!=null?` | Decision ${R.decisionScore}`:\"\"}`)},ie=async()=>{m(!0),v(\"\");try{const{created:I,moved:he,warning:E}=await v2(h,s),Y=I?`Added to ${Ks[h]}`:he?`Moved to ${Ks[h]}`:`Already in ${Ks[h]}`;v(E?`${Y} $",
+    "\"}${(R==null?void 0:R.decisionScore)!=null?` | Decision ${R.decisionScore}`:\"\"}`)},ie=async()=>{m(!0),v(\"\");try{const{created:I,moved:he,warning:E}=await v2(h,s),Y=I?`Added to ${Ks[h]}`:he?`Moved to ${Ks[h]}`:`Already in ${Ks[h]}`;v(E?`${Y} ${E}`:Y)}catch(I){v(I instanceof Error?",
+    "l?\"Unavailable\":`+${et(R.adjustment)}`],[\"Decision score\",R.decisionScore==null?\"Unavailable\":et(R.decisionScore)],[\"Coverage\",R.coverage],[\"Available HTFs\",R.availableTimeframes.join(\", \")||\"None\"],[\"Missing HTFs\",R.missingTimeframes.join(\", \")||\"None\"]]}),R.matches.map(I=>r.jsx",
+    ",[\"Decision score\",R.decisionScore==null?\"Unavailable\":et(R.decisionScore)],[\"Coverage\",R.coverage],[\"Available HTFs\",R.availableTimeframes.join(\", \")||\"None\"],[\"Missing HTFs\",R.missingTimeframes.join(\", \")||\"None\"]]}),R.matches.map(I=>r.jsxs(\"div\",{className:\"zone-htf-match\",chi",
+    "onScore!=null){const Mt=($t=yn.get(oi(ze)))==null?void 0:$t.decisionScore;if(Mt==null||Mt<d.minDecisionScore)return!1}return ze.score>=d.minScore})].sort((ze,Ke)=>{var Gi,Yi,kn,ii;const $t=Math.abs((ze.top+ze.bottom)/2-J),Mt=Math.abs((Ke.top+Ke.bottom)/2-J),Rn=d.contextMode===\"ra",
+    " 0:Yi.alignment):0,Ns=(((kn=yn.get(oi(Ke)))==null?void 0:kn.decisionScore)??-1)-(((ii=yn.get(oi(ze)))==null?void 0:ii.decisionScore)??-1);return Rn||Ns||$t-Mt||Ke.score-ze.score});return(d.nearestCount==null?ke:ke.slice(0,d.nearestCount)).sort((ze,Ke)=>ze.startTime-Ke.startTime)}"
+  ],
+  "patternAssign": [
+    "core>=48&&E.state===\"fresh\";return{id:`v2_zone_${o}`,type:u,pattern:ie,quality:xe,score:A.score,startTime:e[p].time,endTime:e[d].time,legOutTime:R.time,top:I.top,bottom:I.bottom,pr",
+    "mationDetails:oM({working:e,config:n,timeframe:a,zoneType:u,pattern:ie,formationMode:v,legInIndex:h,baseStartIndex:p,baseEndIndex:d,legOutStartIndex:m,legOutIndex:y,baseHigh:T,base"
+  ]
+}

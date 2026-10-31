@@ -1,0 +1,38 @@
+{
+  "symbol": "COCHINSHIP",
+  "timeframe": "1d",
+  "detector": "v3",
+  "algorithmVersion": "dz-v3-canonical-6",
+  "zonesTested": 491,
+  "exactMatches": {
+    "scoreEqualsSumOfComponents": 491,
+    "compactnessPointsEqualsBaseCompactnessTimes20": 491,
+    "departurePointsEqualsDepartureStrengthTimes25": 491,
+    "priorStructureIs15WhenStructureBreakElse0": 491,
+    "originIs5WhenOriginConfirmationElse0": 491,
+    "roleClarityIs12WhenDeparturePauseElse15": 491,
+    "closeBreakPointsMatchDistanceOverAtrTimes15": 491,
+    "compactnessRatioMatchesWidthOverAtr": 491,
+    "departureStrengthMatchesMoveOverOnePointFiveAtrOnZonesWithABase": 364,
+    "departureStrengthAlsoMatchesOneNoBaseZone": 1,
+    "departureStrengthUnmatchedNoBaseZones": 126
+  },
+  "gap": {
+    "zonesWithNonZeroGapPoints": 10,
+    "pointsOtherThan5": 0,
+    "observedClassification": "pro_trend"
+  },
+  "roleClarity": {
+    "zonesAt15": 479,
+    "zonesAt12": 12,
+    "rule": "12 when departurePause has a candle, otherwise 15"
+  },
+  "closeBreakDistance": {
+    "observedCap": 15,
+    "withBase": "confirmation close beyond base high (demand) or base low (supply), divided by the upper median of base ATRs, times 15",
+    "withoutBase": "confirmation close beyond the proximal, divided by the first leg-out ATR, times 15",
+    "uncappedMatches": 375,
+    "cappedMatches": 112,
+    "zeroMatches": 4
+  }
+}

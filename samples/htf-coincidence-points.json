@@ -1,0 +1,31 @@
+{
+  "source": "GET /api/reports/zones saved V2 daily Nifty 500 demand report, build=false",
+  "rows": 9,
+  "decisionScore": "score + htfAdjustment on every row",
+  "htfAdjustment": "sum of match.awardedPoints",
+  "awardedPoints": "baseWeight * multiplier",
+  "multipliersObserved": {
+    "full containment, overlap 100": 1,
+    "partial overlap": 0.75,
+    "near, overlap 0, with a gap": 0.4
+  },
+  "baseWeightByRelativePosition": {
+    "1": 1,
+    "2": 2,
+    "3": 12,
+    "4": 13
+  },
+  "baseWeightTimeframes": {
+    "1w": 1,
+    "1M": 2,
+    "3M": 12,
+    "6M": 13
+  },
+  "baseWeightSource": "Nine zone-distance rows plus 18 ready confluence rows. 1Y was not present.",
+  "examples": [
+    {"symbol": "EMMVEE", "parts": "1w full weight 1 * 1 = 1", "adjustment": 1},
+    {"symbol": "COALINDIA", "parts": "1w partial weight 1 * 0.75 = 0.75", "adjustment": 0.75},
+    {"symbol": "PAGEIND", "parts": "1w partial 0.75 + 1M full weight 2 * 1 = 2.75", "adjustment": 2.75},
+    {"symbol": "TATASTEEL", "parts": "1w near 1 * 0.4 + 6M near 13 * 0.4 = 5.6", "adjustment": 5.6}
+  ]
+}

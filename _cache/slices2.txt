@@ -1,0 +1,30 @@
+
+===== window.open @528616 =====
+d,{size:14})," ",k?"Cancelling…":"Cancel job"]}),w&&r.jsx("button",{onClick:()=>window.open(`/?view=operations&type=loader&id=${w}`,"_blank","noopener,noreferrer"),children:"View Logs"}),r.jsx("button",{className:"icon-button small",disabled:y,onClick:()=>void oe(),title:"Refresh status","aria-label":"Refresh status",children:r.
+
+===== window.open @535062 =====
+id 0:a.detector)??qo(n==null?void 0:n.detectorVersion)}function s0(s,e=(n,a,o)=>window.open(n,a,o)){return e(CC(s),"_blank","noopener,noreferrer")}function EC(){const s=new URLSearchParams(window.location.search);for(const e of["zoneHighlight","zoneType","zoneLow","zoneHigh","zoneFormation","zoneStart","zoneLabel","zoneSource"])
+
+===== window.open @549114 =====
+e==null?void 0:me.runId)&&r.jsx("button",{className:"action-button",onClick:()=>window.open(`/?view=operations&type=report&id=${me.runId}`,"_blank","noopener,noreferrer"),children:"View Logs"}),r.jsxs("button",{className:"action-button",onClick:En,disabled:!Bt.length,children:[r.jsx(Qo,{size:16})," CSV"]})]})]}),r.jsxs("button",
+
+===== window.open @583041 =====
+…":"Cancel backtest"]}),p&&r.jsx("button",{className:"backtest-run",onClick:()=>window.open(`/?view=operations&type=backtest&id=${p.id}`,"_blank","noopener,noreferrer"),children:"View Logs"})]})]}),r.jsxs("div",{className:"backtest-form",children:[r.jsxs("label",{children:["Scope",r.jsxs("select",{value:a.scope,onChange:A=>ie(A.
+
+===== maType @388788 =====
+ving_average"&&typeof e.id=="string"&&e.id.length>=1&&e.id.length<=80&&Aw.has(e.maType)&&Number.isInteger(e.length)&&Number(e.length)>=1&&Number(e.length)<=2e3&&Ow.has(e.source)&&Number.isInteger(e.offset)&&Number(e.offset)>=-500&&Number(e.offset)<=500&&e.timeframe==="chart"&&typ
+
+===== maType @389468 =====
+f(n==null?void 0:n.showTitle)=="boolean"&&Object.keys(e).every(a=>["id","kind","maType","length","source","offset","timeframe","waitForTimeframeClose","style"].includes(a))&&Object.keys(n).every(a=>["color","width","lineStyle","visible","showPriceScaleLabel","showLatestValue","sh
+
+===== maType @389770 =====
+}function kv(s={}){var e,n,a,o,u,h,p;return{id:s.id??$w(),kind:"moving_average",maType:s.maType??"sma",length:s.length??20,source:s.source??"close",offset:s.offset??0,timeframe:"chart",waitForTimeframeClose:s.waitForTimeframeClose??!1,style:{color:((e=s.style)==null?void 0:e.colo
+
+===== leg_out_range @428449 =====
+ or HTF exception","This is the exact route used for this Leg-Out candle."),_t("leg_out_range",d==="htf_percentage_impulse"?"HTF price-move range":"Range versus rolling median",d==="gap_impulse"||d==="leg_out_continuation"||d==="htf_explosive_departure"||d==="htf_near_threshold_continuation"?"not_required":"passed",d==="htf_percentage_impulse"?h:u,d==="htf_percentage_impulse"?">= 0.45":d==="strong_impulse"?`>= ${a.impulseRangeMultiplier*(1-a.thresholdTolerance)}`:`>= ${a.softImpulseRangeMultiplier*(1-a.thresholdTolerance)}`,d==="htf_percentage_impulse"?"(high - low) / low":"candle range / rolling median candle range",d==="gap_impulse"?"The price gap qualified the candle without this range test.":d==="leg_out_continuation"?"A later same-direction candle may continue the group with the required body ratio.":d==="htf_near_threshold_continuation"?"One HTF Base-Departure bridge may continue by closing farther away without a rolling-range requirement.":d==="htf_explosive_
+
+===== Zone Distance @547912 =====
+ort-header",children:[r.jsxs("div",{children:[r.jsx("h2",{children:s==="zones"?"Zone Distance Report":"Zone Confluence Report"}),r.jsx("p",{children:s==="zones"?"Stocks closest to tradeable demand and supply zones":"Lower timeframe zones overlapping higher timeframe decision area
+
+===== Zone Distance @554825 =====
+e saved result.":`Build this report to save it as your last-used ${s==="zones"?"Zone Distance":"Zone Confluence"} report.`})]}),r.jsx("div",{className:"report-table-wrap app-report-table",children:s==="zones"?r.jsx(LC,{rows:Bt,sortCriteria:ie,setSortCriteria:F,onOpenChart:ft}):r.

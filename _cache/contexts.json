@@ -1,0 +1,174 @@
+[
+  {
+    "needle": "/api/",
+    "total": 51,
+    "samples": [
+      "dren:o},o))})]})]})}const it=\"\";async function Va(s,e,n,a=!1){const o=await $e(\"/api/admin/activity/\"+s,{signal:e,...n?{method:\"POST\",headers:{\"Content-Type\":\"application/json\"},body:JSON.stringify(n)}:{}});if(!o.ok)throw new",
+      "ymbol,timeframe:s.timeframe,version:\"v3\",asOf:String(s.asOf)}),n=await $e(`${it}/api/zones/detect?${e}`,{signal:s.signal});if(!n.ok)throw new Error((await n.json()).error??\"V3 detection failed\");return n.json()}function Ob(s)",
+      "{...e,credentials:\"same-origin\",headers:o});return h.status===401&&!a.includes(\"/api/auth/login\")&&window.dispatchEvent(new Event(\"cc-auth-required\")),h}async function ti(s,e){const n=await $e(`/api/zone-watch${s}`,e),a=await",
+      "Event(new Event(\"cc-auth-required\")),h}async function ti(s,e){const n=await $e(`/api/zone-watch${s}`,e),a=await n.json();if(!n.ok){const o=new Error(a.error??\"Zone Watch request failed\");throw o.duplicate=a.duplicate,o}return",
+      "st u=new XMLHttpRequest,h=new FormData;h.append(\"file\",e,e.name),u.open(\"POST\",`/api/zone-watch/${s}/trade-plan/attachments`),u.withCredentials=!0;const p=decodeURIComponent(Ob(`${Id}_csrf`)??\"\");p&&u.setRequestHeader(\"X-CSRF",
+      "ACTING_INDICES:\"HTF Reacting Indices\"};async function dr(s,e){const n=await $e(`/api/dashboard/items${s}`,e),a=await n.json();if(!n.ok)throw new Error(a.error??\"Dashboard request failed\");return a}function p2(){return dr(\"\")}",
+      "2(s){return dr(`/${s}`,{method:\"DELETE\"})}async function x2(){const s=await $e(\"/api/user/tool-state\");if(!s.ok)throw new Error((await s.json()).error??\"Tool preferences unavailable\");return s.json()}async function ec(s,e){co",
+      ".json()}async function ec(s,e){const n=s===\"chart\"||s===\"zones\"?3:2,a=await $e(`/api/user/tool-state/${s}`,{method:\"PUT\",headers:{\"Content-Type\":\"application/json\"},body:JSON.stringify({version:n,state:e}),keepalive:!0});if(!"
+    ]
+  },
+  {
+    "needle": "instruments",
+    "total": 10,
+    "samples": [
+      " derived data\");return e.json()}async function $b(){const s=await $e(`${it}/api/instruments`);if(!s.ok)throw new Error(\"Failed to fetch instruments\");return await s.json()}async function Hb(s){const e=await $e(`${it}/api/loader/run",
+      "t s=await $e(`${it}/api/instruments`);if(!s.ok)throw new Error(\"Failed to fetch instruments\");return await s.json()}async function Hb(s){const e=await $e(`${it}/api/loader/runs/${s}`);if(!e.ok)throw new Error((await e.json()).error",
+      "useState(\"\");C.useEffect(()=>{Ib().then(de=>h(de.universes)),$b().then(de=>R(de.instruments));const A=Number(localStorage.getItem(ad));A&&Gv(A).then(d).catch(()=>localStorage.removeItem(ad))},[]),C.useEffect(()=>{if(!p)return;let A",
+      "verse\",children:\"Universe\"}),r.jsx(\"option\",{value:\"symbols\",children:\"Selected instruments\"})]})]}),a.scope===\"universe\"?r.jsxs(\"label\",{children:[\"Universe\",r.jsx(\"select\",{value:a.universe,onChange:A=>L(\"universe\",A.target.value",
+      "s.operationalState!==s.marketStatus?s.operationalState:s.condition;function jT({instruments:s,onOpenChart:e,showTitle:n=!0}){var Tt,Bt,kt;const[a,o]=C.useState([]),[u,h]=C.useState(\"Not connected\"),[p,d]=C.useState([]),[m,y]=C.useS",
+      "eEffect(()=>{a!==\"chart\"&&a!==\"home\"&&a!==\"zone-watch\"||!Ze||$b().then(ee=>n(ee.instruments))},[a,Ze]),C.useEffect(()=>{const ee=()=>{var ye,be;o(ky()),h(Ay()??((ye=Ue.current.chart)==null?void 0:ye.state.symbol)??\"RELIANCE\"),d(Oy(",
+      "ved demand and supply zones, touches and alerts.\"})]})}),r.jsx(jT,{showTitle:!1,instruments:e,onOpenChart:(ee,ye,be)=>window.open(`${yn(\"chart\",{symbol:ee,timeframe:ye})}&watchZoneId=${be??\"\"}`,\"_blank\",\"noopener,noreferrer\")})]}):",
+      "rocessed_symbols??0)>0:s.type===\"loader\"?Number(s.candles_count??0)>0||Number(s.instruments_count??0)>0:Number(((e=s.progress)==null?void 0:e.processedSymbols)??0)>0||Number(((n=s.progress)==null?void 0:n.rowsFound)??0)>0}function "
+    ]
+  },
+  {
+    "needle": "timeframe",
+    "total": 216,
+    "samples": [
+      ")&&Number.isInteger(e.offset)&&Number(e.offset)>=-500&&Number(e.offset)<=500&&e.timeframe===\"chart\"&&typeof e.waitForTimeframeClose==\"boolean\"&&!!n&&Lw.test(String((n==null?void 0:n.color)??\"\"))&&Number.isInteger(n==null?void 0:n",
+      "ean\"&&Object.keys(e).every(a=>[\"id\",\"kind\",\"maType\",\"length\",\"source\",\"offset\",\"timeframe\",\"waitForTimeframeClose\",\"style\"].includes(a))&&Object.keys(n).every(a=>[\"color\",\"width\",\"lineStyle\",\"visible\",\"showPriceScaleLabel\",\"showL",
+      "s.maType??\"sma\",length:s.length??20,source:s.source??\"close\",offset:s.offset??0,timeframe:\"chart\",waitForTimeframeClose:s.waitForTimeframeClose??!1,style:{color:((e=s.style)==null?void 0:e.color)??\"#e4bd4c\",width:((n=s.style)==nu",
+      "warmupBars:s=>s.length-1,calculationKey:s=>[s.kind,s.maType,s.length,s.source,s.timeframe,s.waitForTimeframeClose].join(\"|\"),calculate:vb,updateTail:Hw,restyle:(s,e)=>{var n;return sr(s,((n=e.plots[0])==null?void 0:n.points)??[])",
+      "nst ie=Tb(u,R,L,o);if(!_b(u,L,b,R,ie,o))continue;const F=qd({working:u,config:o,timeframe:e,zoneNumber:d,zoneType:L,legInIndex:j,baseStartIndex:y,baseEndIndex:v,legOutStartIndex:R,legOutIndex:ie,formationMode:ae?\"htf_continuation",
+      ".direction===\"bullish\"?\"demand\":\"supply\",S=Tb(s,y,b,e),w=qd({working:s,config:e,timeframe:n,zoneNumber:h,zoneType:b,legInIndex:m,baseStartIndex:p,baseEndIndex:d,legOutStartIndex:y,legOutIndex:S,formationMode:Vd(s,m,d,y,e,n)?\"htf_",
+      "!_b(s,m,j,p,y,e)||tM(s,y,d.direction,e))continue;const T=qd({working:s,config:e,timeframe:n,zoneNumber:h,zoneType:m,legInIndex:null,baseStartIndex:w,baseEndIndex:b,legOutStartIndex:p,legOutIndex:y,formationMode:\"htf_base_departur",
+      "some(m=>m.close<d*(1-u.breakoutBuffer))}function qd(s){const{working:e,config:n,timeframe:a,zoneNumber:o,zoneType:u,legInIndex:h,baseStartIndex:p,baseEndIndex:d,legOutStartIndex:m,legOutIndex:y,formationMode:v,includeScoreDetails"
+    ]
+  },
+  {
+    "needle": "demandZone",
+    "total": 0,
+    "samples": []
+  },
+  {
+    "needle": "supplyZone",
+    "total": 0,
+    "samples": []
+  },
+  {
+    "needle": "zoneDistance",
+    "total": 0,
+    "samples": []
+  },
+  {
+    "needle": "confluence",
+    "total": 29,
+    "samples": [
+      "nDecisionScore\",String(s.minDecisionScore));const n=await $e(`${it}/api/reports/confluence?${e.toString()}`);if(!n.ok)throw new Error((await n.json()).error??\"Failed to fetch confluence report\");return n.json()}async function I2(s",
+      "toString()}`);if(!n.ok)throw new Error((await n.json()).error??\"Failed to fetch confluence report\");return n.json()}async function I2(s){return Qb(\"zones\",{...s,..._s(s),variant:void 0})}async function Q2(s){return Qb(\"confluence\"",
+      "turn Qb(\"zones\",{...s,..._s(s),variant:void 0})}async function Q2(s){return Qb(\"confluence\",{...s,..._s(s),variant:void 0})}async function F2(s){return fc(\"zones\",\"pause\",{...s,..._s(s),variant:void 0})}async function G2(s){return",
+      "zones\",\"resume\",{...s,..._s(s),variant:void 0})}async function Y2(s){return fc(\"confluence\",\"pause\",{...s,..._s(s),variant:void 0})}async function K2(s){return fc(\"confluence\",\"resume\",{...s,..._s(s),variant:void 0})}function _s(s",
+      "luence\",\"pause\",{...s,..._s(s),variant:void 0})}async function K2(s){return fc(\"confluence\",\"resume\",{...s,..._s(s),variant:void 0})}function _s(s){var e,n,a;return!s.contextMode||s.contextMode===\"off\"?{contextMode:\"off\"}:{purpose",
+      "nitialState:n,onStateSaved:a}){var en,Ft,Gt;const o=s===\"zones\"?n:void 0,u=s===\"confluence\"?n:void 0,[h,p]=C.useState([{key:\"all\",label:\"All loaded NSE equities\"}]),[d,m]=C.useState((n==null?void 0:n.universe)??\"all\"),[y,v]=C.useS",
+      ",vn]=C.useState({state:\"saved\"}),Et=C.useMemo(()=>e0(W=>ec(s===\"zones\"?\"zones\":\"confluence\",W),vn,W=>a==null?void 0:a(W)),[s]);C.useEffect(()=>{const W=()=>{Et.flush()};return window.addEventListener(\"pagehide\",W),()=>{window.remo",
+      "st W=Wt.current;if(!W||!Ze)return;const Le=window.setTimeout(()=>{const Oe=s===\"confluence\"?lt():{...W,query:L,sortCriteria:ie};Wt.current=Oe,Ge(Oe)},700);return()=>window.clearTimeout(Le)},[s,L,ie,Ze]),C.useEffect(()=>{if(!Tt)ret"
+    ]
+  },
+  {
+    "needle": "websocket",
+    "total": 0,
+    "samples": []
+  },
+  {
+    "needle": "WebSocket",
+    "total": 3,
+    "samples": [
+      ",C.useEffect(()=>{const _=window.location.protocol===\"https:\"?\"wss\":\"ws\",Se=new WebSocket(`${_}://${window.location.host}/ws`);return Se.onclose=Fe=>{Fe.code===4001&&window.dispatchEvent(new Event(\"cc-auth-required\"))},Se.onmessa",
+      "(()=>{if(!e.length)return;const k=location.protocol===\"https:\"?\"wss\":\"ws\",H=new WebSocket(`${k}://${location.host}/ws`);return H.onopen=()=>H.send(JSON.stringify({type:\"subscribe_dashboard\",symbols:[...new Set(e.map(L=>L.symbol))",
+      "art\"||!Ze)return;const ee=window.location.protocol===\"https:\"?\"wss\":\"ws\",ye=new WebSocket(`${ee}://${window.location.host}/ws`);return $.current=ye,ye.onopen=()=>{ve(\"Live connected\"),ye.send(JSON.stringify({type:\"subscribe\",symb"
+    ]
+  },
+  {
+    "needle": "candle",
+    "total": 150,
+    "samples": [
+      "s.high+s.low+s.close*2)/4;return Number.isFinite(n)?n:null}function vb(s){const{candles:e,config:n}=s,a=[],o=[];let u=0,h=0,p=0,d=0,m=null;const y=()=>{o.length=0,u=0,h=0,p=0,d=0,m=null};for(let v=0;v<e.length;v+=1){const b=e[",
+      "Hw(s,e){var m,y,v;const n=((m=e.plots[0])==null?void 0:m.points)??[];if(!Uw(n,s.candles))return vb(s);const a=s.candles.length===n.length+1,o=s.candles.length-1,u=s.candles[o];if(!u)return sr(s.config,[]);if(a&&s.config.waitFo",
+      "plots[0])==null?void 0:m.points)??[];if(!Uw(n,s.candles))return vb(s);const a=s.candles.length===n.length+1,o=s.candles.length-1,u=s.candles[o];if(!u)return sr(s.config,[]);if(a&&s.config.waitForTimeframeClose){const b=o-1,S=s",
+      "??[];if(!Uw(n,s.candles))return vb(s);const a=s.candles.length===n.length+1,o=s.candles.length-1,u=s.candles[o];if(!u)return sr(s.config,[]);if(a&&s.config.waitForTimeframeClose){const b=o-1,S=s.candles[b],w=((y=n[b-1])==null?",
+      "es))return vb(s);const a=s.candles.length===n.length+1,o=s.candles.length-1,u=s.candles[o];if(!u)return sr(s.config,[]);if(a&&s.config.waitForTimeframeClose){const b=o-1,S=s.candles[b],w=((y=n[b-1])==null?void 0:y.value)??null",
+      "!u)return sr(s.config,[]);if(a&&s.config.waitForTimeframeClose){const b=o-1,S=s.candles[b],w=((y=n[b-1])==null?void 0:y.value)??null,j=Ph(s.config,s.candles,b,w);return sr(s.config,[...n.slice(0,-1),{time:S.time,value:j},{time",
+      " b=o-1,S=s.candles[b],w=((y=n[b-1])==null?void 0:y.value)??null,j=Ph(s.config,s.candles,b,w);return sr(s.config,[...n.slice(0,-1),{time:S.time,value:j},{time:u.time,value:s.isLastCandleComplete?Ph(s.config,s.candles,o,j):null}",
+      "),{time:S.time,value:j},{time:u.time,value:s.isLastCandleComplete?Ph(s.config,s.candles,o,j):null}])}const h=n.slice(0,a?n.length:-1),p=((v=h.at(-1))==null?void 0:v.value)??null,d=s.config.waitForTimeframeClose&&!s.isLastCandl"
+    ]
+  },
+  {
+    "needle": "ATR",
+    "total": 22,
+    "samples": [
+      "ss\",N?\"passed\":\"failed\",ie,h===\"htf_explosive_departure\"?\"non-forced base width/ATR <= 4.6 and every non-forced candle within the HTF range limit\":`non-forced base width/ATR <= ${F}, an eligible similar-range override, or f",
+      " and every non-forced candle within the HTF range limit\":`non-forced base width/ATR <= ${F}, an eligible similar-range override, or forced low-body Base`,\"full base width / median base ATR (score input); compactness is chec",
+      "similar-range override, or forced low-body Base`,\"full base width / median base ATR (score input); compactness is checked only on non-forced candles\",ge?`The full base is ${ie.toFixed(2)} ATR. ${X.length} candle${X.length==",
+      "ss is checked only on non-forced candles\",ge?`The full base is ${ie.toFixed(2)} ATR. ${X.length} candle${X.length===1?\" is\":\"s are\"} mandatory Base-only below 35% body ratio, so ${Y.length===0?\"no normal compactness test wa",
+      "le HTF similar-range override.\":\"The combined base remained compact relative to ATR.\"),_t(\"forced_base_override\",\"Forced low-body Base override\",ge?\"passed\":\"not_required\",ge?X.map(ue=>ue.time).join(\", \"):0,\"body ratio < 0.",
+      ",_t(\"departure_atr\",\"Departure strength\",E?\"not_required\":\"passed\",j,`departure/ATR >= ${I}`,\"distance from base boundary to terminal leg-out close / median base ATR\",E?\"The ATR test was not the accepting route because the ",
+      "R >= ${I}`,\"distance from base boundary to terminal leg-out close / median base ATR\",E?\"The ATR test was not the accepting route because the exceptional total-move rule qualified.\":\"The departure cleared the configured ATR ",
+      "distance from base boundary to terminal leg-out close / median base ATR\",E?\"The ATR test was not the accepting route because the exceptional total-move rule qualified.\":\"The departure cleared the configured ATR minimum.\"),_"
+    ]
+  },
+  {
+    "needle": "RSI",
+    "total": 0,
+    "samples": []
+  },
+  {
+    "needle": "backtest",
+    "total": 53,
+    "samples": [
+      "ancel failed\");return n.json()}async function B2(s){const e=await $e(`${it}/api/backtests`,{method:\"POST\",headers:{\"Content-Type\":\"application/json\"},body:JSON.stringify(s)});if(!e.ok)throw new Error((await e.json()).error??\"Bac",
+      "ktest failed\");return e.json()}async function Gv(s){const e=await $e(`${it}/api/backtests/${s}`);if(!e.ok)throw new Error((await e.json()).error??\"Backtest not found\");return e.json()}async function $2(s){const e=await $e(`${it}",
+      "st not found\");return e.json()}async function $2(s){const e=await $e(`${it}/api/backtests/${s}/cancel`,{method:\"POST\"});if(!e.ok)throw new Error((await e.json()).error??\"Backtest cancellation failed\");return e.json()}async funct",
+      "ation failed\");return e.json()}async function H2(s){const e=await $e(`${it}/api/backtests/${s}/pause`,{method:\"POST\"});if(!e.ok)throw new Error((await e.json()).error??\"Backtest pause failed\");return e.json()}async function U2(s",
+      "pause failed\");return e.json()}async function U2(s){const e=await $e(`${it}/api/backtests/${s}/resume`,{method:\"POST\"});if(!e.ok)throw new Error((await e.json()).error??\"Backtest resume failed\");return e.json()}async function V2",
+      "ume failed\");return e.json()}async function V2(s,e){const n=await $e(`${it}/api/backtests/${s}/${e}?limit=200`);if(!n.ok)throw new Error(\"Backtest results failed\");return n.json()}async function Ib(){const s=await $e(`${it}/api/",
+      "l?void 0:s.instrumentType)??\"\").toUpperCase()===\"INDEX\"}const ad=\"cc-financials-backtest-run\",Xl=new Set([\"complete\",\"complete_with_errors\",\"failed\",\"cancelled\",\"expired\",\"paused\"]),GC=\"dz-v2-prefix-replay-28-htf-single-origin-p",
+      "ge:\"Backtest failed\")}}async function P(){if(!(!p||!window.confirm(\"Cancel this backtest at the next safe checkpoint? Partial zones and trades will be retained as incomplete.\"))){w(\"\");try{await $2(p.id),d({...p,status:\"cancelli"
+    ]
+  },
+  {
+    "needle": "tradePlan",
+    "total": 1,
+    "samples": [
+      "ymbol.toUpperCase()));async function Ze(_){try{const Se=await l2(_);Y(Se),ue(Se.tradePlan??{}),de(Se.notes??\"\")}catch(Se){N(String(Se))}}function Pt(_){he(_.id),ve({symbol:_.symbol,zoneType:_.zoneType,timeframe:_.timeframe,low:_."
+    ]
+  },
+  {
+    "needle": "entry",
+    "total": 23,
+    "samples": [
+      "xpanded\":\"\"}`,title:n??void 0,children:[!o&&h.compact.map(d=>r.jsx(hy,{symbol:s,entry:d,onOpenChart:a},lr(d.zone))),!o&&h.compact.length===0&&r.jsx(\"span\",{className:\"htf-history-available\",children:\"Historical HTF context av",
+      "\",{children:[d,r.jsx(\"span\",{children:m.length})]}),m.map(y=>r.jsx(hy,{symbol:s,entry:y,onOpenChart:a},lr(y.zone)))]},d)),r.jsx(\"button\",{type:\"button\",className:\"htf-reaction-toggle show-less\",\"aria-expanded\":\"true\",onClick:",
+      ":s.rejectedAt!=null?\"Reaction ended\":\"Historical lineage\"}function hy({symbol:s,entry:e,onOpenChart:n}){const{zone:a,prefix:o,tone:u,stateLabel:h}=e,p=a.timeframe===\"1Y\"?\"1Y (12M)\":a.timeframe,d=a.zoneType===\"demand\"?\"DZ\":\"SZ",
+      "and\"?\"DZ\":\"SZ\"}`,source:\"zone-report\",onOpenChart:a}),r.jsxs(\"span\",{children:[\"entry \",Qe(o.entry),\" / stop \",Qe(o.stop)]})]}),r.jsxs(\"td\",{children:[r.jsxs(\"strong\",{children:[o.quality,\" \",Qe(o.score,0)]}),r.jsxs(\"span\",{c",
+      "\"}`,source:\"zone-report\",onOpenChart:a}),r.jsxs(\"span\",{children:[\"entry \",Qe(o.entry),\" / stop \",Qe(o.stop)]})]}),r.jsxs(\"td\",{children:[r.jsxs(\"strong\",{children:[o.quality,\" \",Qe(o.score,0)]}),r.jsxs(\"span\",{children:[o.pa",
+      "tring(s.symbol??\"Unknown\")}),r.jsxs(\"small\",{children:[a,\" · \",e===\"trades\"?Md(\"entry_time\",s.entry_time):String(s.pattern??\"Zone reaction\")]})]}),r.jsx(\"span\",{children:e===\"trades\"?Jl(\"pnl_status\",s,n):String(s.outcome??s.q",
+      "??\"Unknown\")}),r.jsxs(\"small\",{children:[a,\" · \",e===\"trades\"?Md(\"entry_time\",s.entry_time):String(s.pattern??\"Zone reaction\")]})]}),r.jsx(\"span\",{children:e===\"trades\"?Jl(\"pnl_status\",s,n):String(s.outcome??s.quality??\"\")})]",
+      ".outcome??s.quality??\"\")})]}),r.jsxs(\"div\",{children:[(e===\"trades\"?[\"zone_id\",\"entry\",\"stop\",\"target\",\"net_pnl\",\"decision_score\"]:[\"zone_type\",\"zone_range\",\"score\",\"decision_score\",\"discovery_time\",\"valid_at_end\"]).map(o=>r."
+    ]
+  },
+  {
+    "needle": "stopLoss",
+    "total": 0,
+    "samples": []
+  },
+  {
+    "needle": "target",
+    "total": 162,
+    "samples": [
+      " security precaution.')\":t}function wi(){}var wc=null;function Mc(t){return t=t.target||t.srcElement||window,t.correspondingUseElement&&(t=t.correspondingUseElement),t.nodeType===3?t.parentNode:t}var ra=null,oa=null;function F",
+      "tion Kd(){return!1}function bn(t){function i(l,c,f,g,x){this._reactName=l,this._targetInst=f,this.type=c,this.nativeEvent=g,this.target=x,this.currentTarget=null;for(var M in t)t.hasOwnProperty(M)&&(l=t[M],this[M]=l?l(g):g[M])",
+      "f,g,x){this._reactName=l,this._targetInst=f,this.type=c,this.nativeEvent=g,this.target=x,this.currentTarget=null;for(var M in t)t.hasOwnProperty(M)&&(l=t[M],this[M]=l?l(g):g[M]);return this.isDefaultPrevented=(g.defaultPrevent",
+      "X:0,tiltY:0,twist:0,pointerType:0,isPrimary:0}),Wd=bn(k0),z0=v({},ll,{touches:0,targetTouches:0,changedTouches:0,altKey:0,metaKey:0,ctrlKey:0,shiftKey:0,getModifierState:kc}),A0=bn(z0),O0=v({},ks,{propertyName:0,elapsedTime:0,",
+      "length&&(i=new Sr(\"onSelect\",\"select\",null,i,l),t.push({event:i,listeners:c}),i.target=ua)))}function zs(t,i){var l={};return l[t.toLowerCase()]=i.toLowerCase(),l[\"Webkit\"+t]=\"webkit\"+i,l[\"Moz\"+t]=\"moz\"+i,l}var ha={animationen",
+      "ointer\"),gt=K==null?q:ke(K),V=je==null?q:ke(je),q=new Ae(le,O+\"leave\",K,l,se),q.target=gt,q.relatedTarget=V,le=null,J(se)===Z&&(Ae=new Ae(D,O+\"enter\",je,l,se),Ae.target=V,Ae.relatedTarget=gt,le=Ae),gt=le,K&&je)t:{for(Ae=$x,D=K",
+      "rget=gt,q.relatedTarget=V,le=null,J(se)===Z&&(Ae=new Ae(D,O+\"enter\",je,l,se),Ae.target=V,Ae.relatedTarget=gt,le=Ae),gt=le,K&&je)t:{for(Ae=$x,D=K,O=je,V=0,le=D;le;le=Ae(le))V++;le=0;for(var Ne=O;Ne;Ne=Ae(Ne))le++;for(;0<V-le;)D",
+      ")):(pt(t,i,\"encType\",f.encType,f,null),pt(t,i,\"method\",f.method,f,null),pt(t,i,\"target\",f.target,f,null)));if(c==null||typeof c==\"symbol\"||typeof c==\"boolean\"){t.removeAttribute(l);break}c=vr(\"\"+c),t.setAttribute(l,c);break;ca"
+    ]
+  }
+]
